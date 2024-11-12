@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Onfido Verification</title>
+    <script src="https://cdn.onfido.com/sdk/js/v3.0.1/onfido.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        Onfido.init({
+          containerId: "onfido-mount",  // ID where the Onfido SDK UI will mount
+          mobileFlow: true
+        });
+      };
+    </script>
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+      #onfido-mount {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="onfido-mount"></div>
+  </body>
+</html>
+
