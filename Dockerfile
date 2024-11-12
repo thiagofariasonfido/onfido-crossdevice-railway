@@ -8,6 +8,9 @@ COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
 
 # Copy your web content or static files (if any)
+COPY ./index.html /usr/share/nginx/html/ 
+
+# Copy your web content or static files (if any)
 # Uncomment this if you have a public folder with SDK files to serve locally
 # COPY ./public /usr/share/nginx/html
 
