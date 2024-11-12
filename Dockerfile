@@ -5,7 +5,7 @@ FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy your static files or app content into the container
-COPY ./html /usr/share/nginx/html
+COPY ./public /usr/share/nginx/html
 
 # Expose port 80 for NGINX to listen on
 EXPOSE 80
